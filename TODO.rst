@@ -27,6 +27,13 @@ Target: not targeted
 More detailed specification (drafting):
 https://wiki.openstack.org/wiki/Blueprint/OptInStatsTracking
 
+IBM CBTOOL
+^^^^^^^^^^
+
+Framework that automates IaaS cloud benchmarking through the running of 
+controlled experiments (i.e. workload simulation):
+https://github.com/ibmcb/cbtool
+
 -- architecture analysis
 
 -- Heat stacks visualization
