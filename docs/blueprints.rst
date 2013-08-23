@@ -50,4 +50,33 @@ https://blueprints.launchpad.net/cinder/+spec/bare-metal-volumes
 
 Support bare metal node's local disks like volumes.
 
+Glance
+======
+
+Unified request identifier
+--------------------------
+https://blueprints.launchpad.net/glance/+spec/cross-service-request-id
+
+Create unified unique request identifier across all OpenStack services
+which will allow more efficient tracking and debugging of user activity.
+Similar blueprint also exists in Nova along with some code, see below.
+
+Public cloud Glance service
+---------------------
+https://blueprints.launchpad.net/glance/+spec/exposing-glance-for-public-clouds
+
+Current model of interaction between Nova and Glance assumes that
+operations on imaged are managed via Nova API. For public cloud, it is 
+preferred that client has direct access to Glance API. This approach
+requires numerous improvements to existing Glance server.
+
+Horizon
+=======
+
+Ironic
+======
+
+Keystone
+========
+
 
