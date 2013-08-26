@@ -81,6 +81,7 @@ Keystone
 User password expiration support
 --------------------------------
 https://blueprints.launchpad.net/keystone/+spec/user-password-expiration
+
 User password with limited life span is a requirement in some enterprise
 environments. This proposal addresses the demand by introducing:
 
@@ -93,6 +94,7 @@ environments. This proposal addresses the demand by introducing:
 DNC backend for Service Catalog
 -------------------------------
 https://blueprints.launchpad.net/keystone/+spec/dns-catalog
+
 DNS is the standard way to do most of the operations that the Keystone Catalog
 needs to perform. In order to move toward standardizing how Open Stack and DNS
 interoperate, Keystone will be able to store the the Service Catalog in DNS.
@@ -102,18 +104,21 @@ Nova
 Reset established VNC connections
 ---------------------------------
 https://blueprints.launchpad.net/nova/+spec/reset-vnc-console
+
 This is a security feature which allows user to tear down all active VNC connections
 to the given instance in case the token validity period expired.
 
 Deployer-friendly configuration files
 -------------------------------------
 https://blueprints.launchpad.net/nova/+spec/deployer-friendly-confs
+
 This blueprint lists requirements and wishes from deployers to the way Nova should
 handle configuration files.
 
 Loadbalance instance storage paths
 ----------------------------------
 https://blueprints.launchpad.net/nova/+spec/nova-instance-storage-loadbalancing
+
 If you want LiveMigrations you are advised to have this directory on a centralized
 storage, for example on NFS - as explained here:
 http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live-migrations.html
@@ -129,6 +134,7 @@ deployments - for example:
 Pre-caching Nova images
 -----------------------
 https://blueprints.launchpad.net/nova/+spec/nova-image-cache-management-2
+
 This blueprint continues on from https://blueprints.launchpad.net/nova/+spec/nova-image-cache-management
 and adds the pre-caching of popular images. That specification is found under the
 previous blueprint.
@@ -138,6 +144,7 @@ Neutron
 Upgrade Nova network to Neutron
 -------------------------------
 https://blueprints.launchpad.net/neutron/+spec/nova-to-quantum-upgrade
+
 Provides a solution to upgrade from traditional Nova networking to Quantum networking.
 
 Swift
@@ -145,6 +152,7 @@ Swift
 Encrypting objects in Swift
 ---------------------------
 https://blueprints.launchpad.net/swift/+spec/encrypted-objects
+
 We describe extending Swift to provide server side encryption. We detail in addition
 a key manager to hold encrypted keys based on Swift. Together the two protect data
 and keys and make object encryption more transparent.
