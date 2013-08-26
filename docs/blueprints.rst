@@ -83,11 +83,12 @@ User password expiration support
 https://blueprints.launchpad.net/keystone/+spec/user-password-expiration
 User password with limited life span is a requirement in some enterprise
 environments. This proposal addresses the demand by introducing:
-* specific exception and HTTP response ('401 Password expired') in Keystone API;
-* storing password TTL param in database and passing 'expired password'-specific
-  exception to the core from SQL identity backend;
-* handling 'password expired' error and passing 'expired password'-specific
-  exception to the core from LDAP identity backend.
+
+  * specific exception and HTTP response ('401 Password expired') in Keystone API;
+  * storing password TTL param in database and passing 'expired password'-specific
+    exception to the core from SQL identity backend;
+  * handling 'password expired' error and passing 'expired password'-specific
+    exception to the core from LDAP identity backend.
 
 DNC backend for Service Catalog
 -------------------------------
@@ -119,10 +120,11 @@ http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live
 
 There might be good reasons for having more than 1 instance directory for VM
 deployments - for example:
-- In a big lanscape you might want to have more than 1 central storage mounts,
-  i.e. 2 NFS mounts
-- In compute-nodes with multiple local raid arrays you want to distribute
-  instances over all arrays
+
+  - In a big lanscape you might want to have more than 1 central storage mounts,
+    i.e. 2 NFS mounts
+  - In compute-nodes with multiple local raid arrays you want to distribute
+    instances over all arrays
 
 Pre-caching Nova images
 -----------------------
